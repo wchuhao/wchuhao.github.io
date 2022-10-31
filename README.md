@@ -99,6 +99,7 @@ plugins:
 ### Step 5: Setting your resume as the default home page
 1. Open the directory for your local repository
 2. rename your resume to `index.md`
+3. Delete the **_post** folder as we will not need it for a resume
 
 ## Running Jekyll Locally
 Now that the set up done lets take a look at how to run Jekyll Locally
