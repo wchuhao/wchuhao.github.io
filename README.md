@@ -155,11 +155,11 @@ Etter's Book "Modern Technical Writing" describes many concepts and practices of
 
 ## FAQ
 
-**Q:** Why is Markdown better than a word processor?
+**Q:** Why is Markdown better than a word processor?  
 **A:** Markdown is better than a word processor because it is portable and lightweight. You can open Markdown file with any text viewer on any operating system.
 
-**Q:** Why is my resume not showing up?
+**Q:** Why is my resume not showing up?  
 **A:** The Resume is not showing possibly because of the file location. Ensure that the Resume is located in the root directory. This could also happen if you did not rename your resume in **Step 5**.
 
-**Q:** How do I see my resume if I don't want it as my homepage
+**Q:** How do I see my resume if I don't want it as my homepage  
 **A:** If you did not want your resume as the homepage add ```/RESUMENAME``` to the end of the URL, replacing RESUMENAME with the name of your resume file.
