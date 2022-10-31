@@ -64,8 +64,8 @@ cd path/to/your/repository
 14. Run ```bundle install``` from the command prompt
 15. Open the file _config.yml 
 16. Commit changes to the remote repository by running the follow command in the command prompt
-  - ```git add . ``` adds all the changes you have made to a staging area
-  - ```git commit -m "Initial GitHub pages site with Jekyll"``` takes the changes that have are in the staging area and commits the changes. The -m is a flag and the text in double quotes that follow it is a message about the commited changes.
+    - ```git add . ``` adds all the changes you have made to a staging area
+    - ```git commit -m "Initial GitHub pages site with Jekyll"``` takes the changes that have are in the staging area and commits the changes. The -m is a flag and the text in double quotes that follow it is a message about the commited changes.
 17. Push your changes to the remote repository with the following command replacing BRANCH with your branch name
 ```
 git push -u origin BRANCH 
@@ -80,11 +80,11 @@ git push -u origin BRANCH
 3. Run ```git push -u origin BRANCH ``` again replacing BRANCH with your branch name
 
 ### Step 4: Changing the Theme
-- If you don't want to change the theme leave everything as is.
+- If you don't want to change the theme leave everything as is. **This tutorial assume the theme is the default one, Minima**
 1. Open the *_config.yml* file in your local repository
 2. Add the following replace ```REMOTE/THEME/LOCATION``` to the location of one of the [supported themes](https://pages.github.com/themes/)
-  - NOTE: For more information as to what to place in the ```remote_theme``` parameter see the README in the theme's repository 
-  - Note: Use ```theme: THEME_NAME``` instead of ```remote_theme: REMOTE/THEME/LOCATION```if the theme is not remote.
+    - NOTE: For more information as to what to place in the ```remote_theme``` parameter see the README in the theme's repository 
+    - Note: Use ```theme: THEME_NAME``` instead of ```remote_theme: REMOTE/THEME/LOCATION```if the theme is not remote.
 
 ```
 remote_theme: REMOTE/THEME/LOCATION
@@ -100,12 +100,15 @@ plugins:
 1. Open the directory for your local repository
 2. rename your resume to `index.md`
 3. Delete the **_post** folder as we will not need it for a resume
+4. Run ```git add . ``` 
+4. Run ```git commit -m 'Setting resume as default home page'``` 
+6. Run ```git push -u origin BRANCH ``` again replacing BRANCH with your branch name
 
 ## Running Jekyll Locally
 Now that the set up done lets take a look at how to run Jekyll Locally
 1. Run ```gem install bundler``` to install bundler
 2. Run ```bundle exec jekyll serve``` while in your root directory to start your website
-- If you see the follow error in this step run ```bundle add webrick``` then re-run ```bundle exec jekyll serve```
+    - If you see the follow error in this step run ```bundle add webrick``` then re-run ```bundle exec jekyll serve```
 ```
 Cannot load such file -- webrick (LoadError)
 ```
@@ -127,15 +130,15 @@ Etter's Book "Modern Technical Writing" describes many concepts and practices of
 
 1. Use a lightweight markup language
 
-  - There are many benefits to using a markup language. First, it is human-readable, thus makes it easier for almost anyone to contribute. In Etter's book it is highlighted that having documentation that encourages others to contribute provides a great advantage. Etter(2016) argues that it allows you to take use the knowledge of more people. Etter(2016) also states that unlike What You See Is What You Get(WYSIWYG) editors, lightweight markup languages are more portable and able to function on all operating systems. This again makes it easier for people to contribute as compatibility issues won’t block them. We can see effects of using a lightweight markup language is in the step **Step 4: Changing the Theme**. When do Step 4 you might have noticed how easy to was to know what each parameter did in the _config.yml. As we can see, this is the effect of a lightweight markup language like yml, even without knowing yml, it was intutive what needs to change for the theme to change.
+    - There are many benefits to using a markup language. First, it is human-readable, thus makes it easier for almost anyone to contribute. In Etter's book it is highlighted that having documentation that encourages others to contribute provides a great advantage. Etter(2016) argues that it allows you to take use the knowledge of more people. Etter(2016) also states that unlike What You See Is What You Get(WYSIWYG) editors, lightweight markup languages are more portable and able to function on all operating systems. This again makes it easier for people to contribute as compatibility issues won’t block them. We can see effects of using a lightweight markup language is in the step **Step 4: Changing the Theme**. When do Step 4 you might have noticed how easy to was to know what each parameter did in the _config.yml. As we can see, this is the effect of a lightweight markup language like yml, even without knowing yml, it was intutive what needs to change for the theme to change.
 
 2. Format a document with a static site generator
 
-  - Etter(2016) states in their book that static sites are a simple, fast, and portable way to format your documents. Unlike full-on websites, static sites are much more lightweight. They have no database and are independent of server-side programs, as such, they are perfect for documents. In Etter’s book, the recommended way to create static websites is through and generator, such as Jekyll which we are using here. While we are using Jekyll it should be noted that the one recommended in Etter’s book is Sphinx, as was built for documentation and has a search built into the static site. In Etter’s book, it is noted that the selection of a theme is important. A theme with a good interface and a search function is important to the site. We have demostrated this concept through **Step 2** and **Step 4** where we set up a static site generator and select a theme.
+    - Etter(2016) states in their book that static sites are a simple, fast, and portable way to format your documents. Unlike full-on websites, static sites are much more lightweight. They have no database and are independent of server-side programs, as such, they are perfect for documents. In Etter’s book, the recommended way to create static websites is through and generator, such as Jekyll which we are using here. While we are using Jekyll it should be noted that the one recommended in Etter’s book is Sphinx, as was built for documentation and has a search built into the static site. In Etter’s book, it is noted that the selection of a theme is important. A theme with a good interface and a search function is important to the site. We have demostrated this concept through **Step 2** and **Step 4** where we set up a static site generator and select a theme.
 
 3. Share/host documents on a distributed version control system
 
-- Distributed version control systems (DVCS) are a great way to allow for concurrent work on the same file without any headaches. Etter(2016) argues that while most DVCS are overkill for the documentation workflow, it is still important to them as most developers with use them. One of the big appeals to DVCS is that they allow documentation and code to stay in sync, and it encourages developers to contribute as well. While Git/GitHub may seem complicated, however, after setting up local, the workflow really just boils down to making changes, committing, and pushing. We demonstrated this concept in **Step 1** where we set up the remote repository, in **Step 2** where we set up the local repositroy and we demostrated the workflow of changing/adding a file in **Step 3** where we uploaded the resume.
+    - Distributed version control systems (DVCS) are a great way to allow for concurrent work on the same file without any headaches. Etter(2016) argues that while most DVCS are overkill for the documentation workflow, it is still important to them as most developers with use them. One of the big appeals to DVCS is that they allow documentation and code to stay in sync, and it encourages developers to contribute as well. While Git/GitHub may seem complicated, however, after setting up local, the workflow really just boils down to making changes, committing, and pushing. We demonstrated this concept in **Step 1** where we set up the remote repository, in **Step 2** where we set up the local repositroy and we demostrated the workflow of changing/adding a file in **Step 3** where we uploaded the resume.
 
 ## More Resources
  - [Modern Technical Writing: An Introduction to Software Documentation](https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS)
