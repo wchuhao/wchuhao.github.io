@@ -18,7 +18,7 @@ Requirements for the software and tools used in this guide.
 
 1. Start the creation of a repository by selecting the outlined button in the image below 
 ![image](_img/step1.png)
-2. Enter the required information of your repository
+2. Enter the required information of your repository. (Ignore the warning I have for the Repository name)
     - Enter repository name as "username.github.io" where username is you github username
     - Set visibility to public
     - Select option to initialize repository with a README
@@ -63,12 +63,10 @@ cd path/to/your/repository
 13. Save the Gemfile
 14. Run ```bundle install``` from the command prompt
 15. Open the file _config.yml 
-16. Add the following to the config file ```baseurl: /repo-name``` where repo-name is the name of your repository
-    - Note: you don't need to add this if your repository name is USERNAME.github.io where USERNAME is the username of your github account
-17. Commit changes to the remote repository by running the follow command in the command prompt
+16. Commit changes to the remote repository by running the follow command in the command prompt
   - ```git add . ``` adds all the changes you have made to a staging area
   - ```git commit -m "Initial GitHub pages site with Jekyll"``` takes the changes that have are in the staging area and commits the changes. The -m is a flag and the text in double quotes that follow it is a message about the commited changes.
-18. Push your changes to the remote repository with the following command replacing BRANCH with your branch name
+17. Push your changes to the remote repository with the following command replacing BRANCH with your branch name
 ```
 git push -u origin BRANCH 
 ```
@@ -161,6 +159,3 @@ Etter's Book "Modern Technical Writing" describes many concepts and practices of
 
 **Q:** How do I see my resume if I don't want it as my homepage
 **A:** If you did not want your resume as the homepage add ```/RESUMENAME``` to the end of the URL, replacing RESUMENAME with the name of your resume file.
-
-**Q:** Why is my theme not applying to my site?
-**A:** The theme is not applying to your site likly because of path issues. To ensure that the paths are correct, be sure to add ```baseurl: /repo-name``` to your _config.yml file as stated in step 2.16. Repo-name is the name of your repository.
