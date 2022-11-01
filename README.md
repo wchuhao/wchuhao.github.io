@@ -27,21 +27,21 @@ Requirements for the software and tools used in this guide.
     - Set visibility to public
     - Select option to initialize repository with a README
     - Click **Create repository**
-![image](assets/img/createmenu.png)
+![image](/img/createmenu.png)
 3. In the newly created repository navigate to **Settings**
-![image](_img/settings.png)
+![image](/img/settings.png)
 4. In the sidebar click **Pages**
 5. Set the deployment source to *Deploy from a branch* under the **Source** section
 6. Set the desired publishing branch under the **Branch** section
     - To keep it simple it is recommended that the main branch and root directory is the publishing branch
-![image](assets/pagesSetting.png)
+![image](/img/pagesSetting.png)
 7. Click Save
 ## Step 2: Setting up Jeykell for your repository
 
 1. Click on the **Code** tab of your repository
 2. Click on the green **Code** button
 3. Copy the URL for your repository
-![image](_img/clone.png)
+![image](/img/clone.png)
 4. Open the command prompt by searching "Command Prompt" in your OS search function
 5. Create a new directory on your computer for your local repository
 6. Navigate to the new directory where you want to clone the repository to by running the following command replacing the placeholder path with your actual path
