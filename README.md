@@ -21,13 +21,13 @@ Requirements for the software and tools used in this guide.
 ### Step 1: Creating a GitHub Repository
 
 1. Start the creation of a repository by selecting the outlined button in the image below 
-![image](_img/step1.png)
+![image](assets/_img/step1.png)
 2. Enter the required information of your repository. (Ignore the warning I have for the Repository name)
     - Enter repository name as "username.github.io" where username is you github username
     - Set visibility to public
     - Select option to initialize repository with a README
     - Click **Create repository**
-![image](_img/createmenu.png)
+![image](assets/_img/createmenu.png)
 3. In the newly created repository navigate to **Settings**
 ![image](_img/settings.png)
 4. In the sidebar click **Pages**
