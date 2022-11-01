@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>README | Chu Hao Wen’s Resume</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="README" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/README.html" />
+<meta property="og:url" content="http://localhost:4000/README.html" />
+<meta property="og:site_name" content="Chu Hao Wen’s Resume" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="README" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"README","url":"http://localhost:4000/README.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Chu Hao Wen&apos;s Resume" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Chu Hao Wen&#39;s Resume</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/README.html">README</a><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">README</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="static-websites-and-github-pages">Static Websites And GitHub Pages</h1>
+
+<p>This project is a demonstration of how to use the static website generator Jekyll with GitHub Pages</p>
+
+<h2 id="purpose">Purpose</h2>
+<p>Explain how to host a resume on GitHub Pages. Also, introduce and demonstrate the principles of Andrew Etter’s book Modern Technical Writing</p>
+<h2 id="getting-started">Getting Started</h2>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>Requirements for the software and tools used in this guide.</p>
+<ul>
+  <li><a href="https://github.com/join">GitHub Account</a></li>
+  <li><a href="https://git-scm.com/downloads">Git</a></li>
+  <li><a href="https://www.ruby-lang.org/en/downloads/">Ruby ( If you are on Windows the installer is recommended)</a></li>
+  <li><a href="https://jekyllrb.com/docs/installation/">Jekyll</a>
+    <h2 id="instructions">Instructions</h2>
+    <h3 id="step-1-creating-a-github-repository">Step 1: Creating a GitHub Repository</h3>
+  </li>
+</ul>
+
+<ol>
+  <li>Start the creation of a repository by selecting the outlined button in the image below 
+<img src="_img/step1.png" alt="image" /></li>
+  <li>Enter the required information of your repository. (Ignore the warning I have for the Repository name)
+    <ul>
+      <li>Enter repository name as “username.github.io” where username is you github username</li>
+      <li>Set visibility to public</li>
+      <li>Select option to initialize repository with a README</li>
+      <li>Click <strong>Create repository</strong>
+<img src="_img/createmenu.png" alt="image" /></li>
+    </ul>
+  </li>
+  <li>In the newly created repository navigate to <strong>Settings</strong>
+<img src="_img/settings.png" alt="image" /></li>
+  <li>In the sidebar click <strong>Pages</strong></li>
+  <li>Set the deployment source to <em>Deploy from a branch</em> under the <strong>Source</strong> section</li>
+  <li>Set the desired publishing branch under the <strong>Branch</strong> section
+    <ul>
+      <li>To keep it simple it is recommended that the main branch and root directory is the publishing branch
+<img src="_img/pagesSetting.png" alt="image" /></li>
+    </ul>
+  </li>
+  <li>Click Save
+    <h2 id="step-2-setting-up-jeykell-for-your-repository">Step 2: Setting up Jeykell for your repository</h2>
+  </li>
+  <li>Click on the <strong>Code</strong> tab of your repository</li>
+  <li>Click on the green <strong>Code</strong> button</li>
+  <li>Copy the URL for your repository
+<img src="_img/clone.png" alt="image" /></li>
+  <li>Open the command prompt by searching “Command Prompt” in your OS search function</li>
+  <li>Create a new directory on your computer for your local repository</li>
+  <li>Navigate to the new directory where you want to clone the repository to by running the following command replacing the placeholder path with your actual path
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd path/to/your/directory
+</code></pre></div>    </div>
+  </li>
+  <li>Run the follow command. Besure to replace {YOUR GITHUB REPO URL} with the URL copied in step 2.3
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone {YOUR GITHUB REPO URL}
+</code></pre></div>    </div>
+  </li>
+  <li>Navigate into the newly clone repository by running, replacing the placehold path with the actual path to the local repository
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd path/to/your/repository 
+</code></pre></div>    </div>
+  </li>
+  <li>Run <code class="language-plaintext highlighter-rouge">jekyll new --skip-bundle .</code>
+    <ul>
+      <li>You may need to run the command as the follow if there are conflicts
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> jekyll new --skip-bundle --force .
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Open the Gemfile created by Jekyll</li>
+  <li>Comment out the line that starts with <code class="language-plaintext highlighter-rouge">gem “jekyll”</code>with #</li>
+  <li>replace the comment the <code class="language-plaintext highlighter-rouge"># gem "github-pages"</code> with <code class="language-plaintext highlighter-rouge">gem "github-pages", "~&gt; 227", group: :jekyll_plugins</code></li>
+  <li>Save the Gemfile</li>
+  <li>Run <code class="language-plaintext highlighter-rouge">bundle install</code> from the command prompt</li>
+  <li>Open the file _config.yml</li>
+  <li>Commit changes to the remote repository by running the follow command in the command prompt
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">git add .</code> adds all the changes you have made to a staging area</li>
+      <li><code class="language-plaintext highlighter-rouge">git commit -m "Initial GitHub pages site with Jekyll"</code> takes the changes that have are in the staging area and commits the changes. The -m is a flag and the text in double quotes that follow it is a message about the commited changes.</li>
+    </ul>
+  </li>
+  <li>Push your changes to the remote repository with the following command replacing BRANCH with your branch name
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push -u origin BRANCH 
+</code></pre></div>    </div>
+    <ul>
+      <li>Note: You may be prompted to authorize the action, you can do so play following the steps in the prompt.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="step-3-adding-your-resume">Step 3: Adding your resume</h3>
+
+<ol>
+  <li>Add your resume to the directory you had set for publishing in Step 1.6 in the local repository you cloned</li>
+  <li>Run <code class="language-plaintext highlighter-rouge">git add .</code></li>
+  <li>Run <code class="language-plaintext highlighter-rouge">git commit -m "adding resume"</code></li>
+  <li>Run <code class="language-plaintext highlighter-rouge">git push -u origin BRANCH</code> again replacing BRANCH with your branch name</li>
+</ol>
+
+<h3 id="step-4-changing-the-theme">Step 4: Changing the Theme</h3>
+<ul>
+  <li>If you don’t want to change the theme leave everything as is. <strong>This tutorial assume the theme is the default one, Minima</strong>
+    <ol>
+      <li>Open the <em>_config.yml</em> file in your local repository</li>
+      <li>Add the following replace <code class="language-plaintext highlighter-rouge">REMOTE/THEME/LOCATION</code> to the location of one of the <a href="https://pages.github.com/themes/">supported themes</a></li>
+    </ol>
+    <ul>
+      <li>NOTE: For more information as to what to place in the <code class="language-plaintext highlighter-rouge">remote_theme</code> parameter see the README in the theme’s repository</li>
+      <li>Note: Use <code class="language-plaintext highlighter-rouge">theme: THEME_NAME</code> instead of <code class="language-plaintext highlighter-rouge">remote_theme: REMOTE/THEME/LOCATION</code>if the theme is not remote.</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>remote_theme: REMOTE/THEME/LOCATION
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+</code></pre></div></div>
+<ol>
+  <li>Run <code class="language-plaintext highlighter-rouge">git add .</code></li>
+  <li>Run <code class="language-plaintext highlighter-rouge">git commit -m 'Changing theme'</code></li>
+  <li>Run <code class="language-plaintext highlighter-rouge">git push -u origin BRANCH</code> again replacing BRANCH with your branch name</li>
+</ol>
+
+<h3 id="step-5-setting-your-resume-as-the-default-home-page">Step 5: Setting your resume as the default home page</h3>
+<ol>
+  <li>Open the directory for your local repository</li>
+  <li>rename your resume to <code class="language-plaintext highlighter-rouge">index.md</code></li>
+  <li>Delete the <strong>_post</strong> folder as we will not need it for a resume</li>
+  <li>Run <code class="language-plaintext highlighter-rouge">git add .</code></li>
+  <li>Run <code class="language-plaintext highlighter-rouge">git commit -m 'Setting resume as default home page'</code></li>
+  <li>Run <code class="language-plaintext highlighter-rouge">git push -u origin BRANCH</code> again replacing BRANCH with your branch name</li>
+</ol>
+
+<h2 id="running-jekyll-locally">Running Jekyll Locally</h2>
+<p>Now that the set up done lets take a look at how to run Jekyll Locally</p>
+<ol>
+  <li>Run <code class="language-plaintext highlighter-rouge">gem install bundler</code> to install bundler</li>
+  <li>Run <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> while in your root directory to start your website
+    <ul>
+      <li>If you see the follow error in this step run <code class="language-plaintext highlighter-rouge">bundle add webrick</code> then re-run <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Cannot load such file -- webrick (LoadError)
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Navigate to the server address displayed in the command prompt by copying the server address and pasting in the URL section of your browser</li>
+  <li>Add the following to the <strong>Gemfile</strong> if you are using a remote theme <code class="language-plaintext highlighter-rouge">gem "github-pages", group: :jekyll_plugins</code></li>
+  <li>You end product should like something like does. Although it will differ depending on your chosen theme.
+<img src="/_gifs/resume.gif" alt="Alt Text" /></li>
+</ol>
+
+<h2 id="view-your-static-page">View Your Static Page</h2>
+<ol>
+  <li>Navigate to the settings tab of your repository</li>
+  <li>Click on Pages on the sidebar</li>
+  <li>Click vist site
+<img src="_img/visit.png" alt="Image" /></li>
+  <li>Add <code class="language-plaintext highlighter-rouge">/RESUMENAME</code> where RESUMENAME is the name of the resume you upload to the URL</li>
+</ol>
+
+<h2 id="relation-between-etters-concepts-and-steps-to-hosting-a-static-site">Relation Between Etter’s Concepts and Steps to Hosting a Static Site</h2>
+
+<p>Etter’s Book “Modern Technical Writing” describes many concepts and practices of modern technical writing that you have just done by following the steps above. Lets examine the core concepts and how the relate to the steps we just did.</p>
+
+<ol>
+  <li>
+    <p>Use a lightweight markup language</p>
+
+    <ul>
+      <li>There are many benefits to using a markup language. First, it is human-readable, thus makes it easier for almost anyone to contribute. In Etter’s book it is highlighted that having documentation that encourages others to contribute provides a great advantage. Etter(2016) argues that it allows you to take use the knowledge of more people. Etter(2016) also states that unlike What You See Is What You Get(WYSIWYG) editors, lightweight markup languages are more portable and able to function on all operating systems. This again makes it easier for people to contribute as compatibility issues won’t block them. We can see effects of using a lightweight markup language is in the step <strong>Step 4: Changing the Theme</strong>. When do Step 4 you might have noticed how easy to was to know what each parameter did in the _config.yml. As we can see, this is the effect of a lightweight markup language like yml, even without knowing yml, it was intutive what needs to change for the theme to change.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Format a document with a static site generator</p>
+
+    <ul>
+      <li>Etter(2016) states in their book that static sites are a simple, fast, and portable way to format your documents. Unlike full-on websites, static sites are much more lightweight. They have no database and are independent of server-side programs, as such, they are perfect for documents. In Etter’s book, the recommended way to create static websites is through and generator, such as Jekyll which we are using here. While we are using Jekyll it should be noted that the one recommended in Etter’s book is Sphinx, as was built for documentation and has a search built into the static site. In Etter’s book, it is noted that the selection of a theme is important. A theme with a good interface and a search function is important to the site. We have demostrated this concept through <strong>Step 2</strong> and <strong>Step 4</strong> where we set up a static site generator and select a theme.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Share/host documents on a distributed version control system</p>
+
+    <ul>
+      <li>Distributed version control systems (DVCS) are a great way to allow for concurrent work on the same file without any headaches. Etter(2016) argues that while most DVCS are overkill for the documentation workflow, it is still important to them as most developers with use them. One of the big appeals to DVCS is that they allow documentation and code to stay in sync, and it encourages developers to contribute as well. While Git/GitHub may seem complicated, however, after setting up local, the workflow really just boils down to making changes, committing, and pushing. We demonstrated this concept in <strong>Step 1</strong> where we set up the remote repository, in <strong>Step 2</strong> where we set up the local repositroy and we demostrated the workflow of changing/adding a file in <strong>Step 3</strong> where we uploaded the resume.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="more-resources">More Resources</h2>
+<ul>
+  <li><a href="https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS">Modern Technical Writing: An Introduction to Software Documentation</a></li>
+  <li><a href="https://www.markdowntutorial.com/">Markdown Tutorial</a></li>
+  <li><a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Github Markdown Syntax</a></li>
+  <li><a href="https://github.com/matiassingers/awesome-readme">Markdown Readme Examples</a></li>
+  <li><a href="https://docs.github.com/en/get-started/using-git/about-git">More about Git/GitHub</a></li>
+</ul>
+
+<h2 id="authors-and-acknowledgements">Authors and Acknowledgements</h2>
+
+<ul>
+  <li><a href="https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS">Modern Technical Writing: An Introduction to Software Documentation</a> - Referenced for the concepts used</li>
+  <li><a href="https://github.com/jekyll/minima">Minima</a> - Used to style static page</li>
+  <li>Members of Group 14: Tanish Sood, Juan Armijos, Khush Bhrugesh Patel - Provided feedback for readme</li>
+</ul>
+
+<h2 id="faq">FAQ</h2>
+
+<p><strong>Q:</strong> Why is Markdown better than a word processor?<br />
+<strong>A:</strong> Markdown is better than a word processor because it is portable and lightweight. You can open Markdown file with any text viewer on any operating system.</p>
+
+<p><strong>Q:</strong> Why is my resume not showing up?<br />
+<strong>A:</strong> The Resume is not showing possibly because of the file location. Ensure that the Resume is located in the root directory. This could also happen if you did not rename your resume in <strong>Step 5</strong>.</p>
+
+<p><strong>Q:</strong> How do I see my resume if I don’t want it as my homepage<br />
+<strong>A:</strong> If you did not want your resume as the homepage add <code class="language-plaintext highlighter-rouge">/RESUMENAME</code> to the end of the URL, replacing RESUMENAME with the name of your resume file.</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Chu Hao Wen&#39;s Resume</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Chu Hao Wen&#39;s Resume</li><li><a class="u-email" href="mailto:Wench@myumanitoba.ca">Wench@myumanitoba.ca</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
