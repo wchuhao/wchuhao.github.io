@@ -1,7 +1,3 @@
----
-layout: page
-title: README
----
 # Static Websites And GitHub Pages
 
 This project is a demonstration of how to use the static website generator Jekyll with GitHub Pages
@@ -68,8 +64,8 @@ cd path/to/your/repository
 14. Run ```bundle install``` from the command prompt
 15. Open the file _config.yml 
 16. Commit changes to the remote repository by running the follow command in the command prompt
-    - ```git add . ``` adds all the changes you have made to a staging area
-    - ```git commit -m "Initial GitHub pages site with Jekyll"``` takes the changes that have are in the staging area and commits the changes. The -m is a flag and the text in double quotes that follow it is a message about the commited changes.
+    - NOTE:  ```git add . ``` adds all the changes you have made to a staging area
+    - NOTE: ```git commit -m "Initial GitHub pages site with Jekyll"``` takes the changes that have are in the staging area and commits the changes. The -m is a flag and the text in double quotes that follow it is a message about the commited changes.
 17. Push your changes to the remote repository with the following command replacing BRANCH with your branch name
 ```
 git push -u origin BRANCH 
@@ -88,7 +84,7 @@ git push -u origin BRANCH
 1. Open the *_config.yml* file in your local repository
 2. Add the following replace ```REMOTE/THEME/LOCATION``` to the location of one of the [supported themes](https://pages.github.com/themes/)
     - NOTE: For more information as to what to place in the ```remote_theme``` parameter see the README in the theme's repository 
-    - Note: Use ```theme: THEME_NAME``` instead of ```remote_theme: REMOTE/THEME/LOCATION```if the theme is not remote.
+    - NOTE: Use ```theme: THEME_NAME``` instead of ```remote_theme: REMOTE/THEME/LOCATION```if the theme is not remote.
 
 ```
 remote_theme: REMOTE/THEME/LOCATION
@@ -97,16 +93,24 @@ plugins:
   - jekyll-feed
 ```
 3. Run ```git add . ``` 
-4. Run ```git commit -m 'Changing theme'``` 
+4. Run ```git commit -m "Changing theme"``` 
 6. Run ```git push -u origin BRANCH ``` again replacing BRANCH with your branch name
 
 ### Step 5: Setting your resume as the default home page
 1. Open the directory for your local repository
 2. rename your resume to `index.md`
-3. Delete the **_post** folder as we will not need it for a resume
+3. Delete the **_post** folder as we will not need it 
 4. Run ```git add . ``` 
-4. Run ```git commit -m 'Setting resume as default home page'``` 
+5. Run ```git commit -m "Setting resume as default home page"``` 
 6. Run ```git push -u origin BRANCH ``` again replacing BRANCH with your branch name
+
+## Step 6: View Your Static Page 
+1. Navigate to the settings tab of your repository
+2. Click on Pages on the sidebar
+3. Click vist site
+![Image](/img/visit.png)
+4. You should see something similar to the following
+![Alt Text](/gifs/resume.gif)
 
 ## Running Jekyll Locally
 Now that the set up done lets take a look at how to run Jekyll Locally
@@ -118,15 +122,6 @@ Cannot load such file -- webrick (LoadError)
 ```
 3. Navigate to the server address displayed in the command prompt by copying the server address and pasting in the URL section of your browser
 4. Add the following to the **Gemfile** if you are using a remote theme ``` gem "github-pages", group: :jekyll_plugins```
-5. You end product should like something like does. Although it will differ depending on your chosen theme.
-![Alt Text](/gifs/resume.gif)
-
-## View Your Static Page
-1. Navigate to the settings tab of your repository
-2. Click on Pages on the sidebar
-3. Click vist site
-![Image](/img/visit.png)
-4. Add ```/RESUMENAME``` where RESUMENAME is the name of the resume you upload to the URL
 
 ## Relation Between Etter's Concepts and Steps to Hosting a Static Site
 
@@ -134,7 +129,7 @@ Etter's Book "Modern Technical Writing" describes many concepts and practices of
 
 1. Use a lightweight markup language
 
-    - There are many benefits to using a markup language. First, it is human-readable, thus makes it easier for almost anyone to contribute. In Etter's book it is highlighted that having documentation that encourages others to contribute provides a great advantage. Etter(2016) argues that it allows you to take use the knowledge of more people. Etter(2016) also states that unlike What You See Is What You Get(WYSIWYG) editors, lightweight markup languages are more portable and able to function on all operating systems. This again makes it easier for people to contribute as compatibility issues won’t block them. We can see effects of using a lightweight markup language is in the step **Step 4: Changing the Theme**. When do Step 4 you might have noticed how easy to was to know what each parameter did in the _config.yml. As we can see, this is the effect of a lightweight markup language like yml, even without knowing yml, it was intutive what needs to change for the theme to change.
+    - There are many benefits to using a markup language. First, it is human-readable, thus makes it easier for almost anyone to contribute. In Etter's book it is highlighted that having documentation that encourages others to contribute provides a great advantage. Etter(2016) argues that it allows you to take use the knowledge of more people. Etter(2016) also states that unlike What You See Is What You Get(WYSIWYG) editors, lightweight markup languages are more portable and able to function on all operating systems. This again makes it easier for people to contribute as compatibility issues won’t block them. We can see effects of using a lightweight markup language is in **Step 4: Changing the Theme**. When do Step 4 you might have noticed how easy to was to know what each parameter did in the _config.yml. As we can see, this is the effect of a lightweight markup language like yml, even without knowing yml, it was intutive what needs to change for the theme to change.
 
 2. Format a document with a static site generator
 
@@ -163,7 +158,4 @@ Etter's Book "Modern Technical Writing" describes many concepts and practices of
 **A:** Markdown is better than a word processor because it is portable and lightweight. You can open Markdown file with any text viewer on any operating system.
 
 **Q:** Why is my resume not showing up?  
-**A:** The Resume is not showing possibly because of the file location. Ensure that the Resume is located in the root directory. This could also happen if you did not rename your resume in **Step 5**.
-
-**Q:** How do I see my resume if I don't want it as my homepage  
-**A:** If you did not want your resume as the homepage add ```/RESUMENAME``` to the end of the URL, replacing RESUMENAME with the name of your resume file.
+**A:** The Resume is not showing possibly because of the file location. Ensure that the Resume is located in the root directory. This could also happen if you did not rename your resume in **Step 5** to index.md.
