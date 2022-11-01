@@ -1,3 +1,7 @@
+---
+layout: page
+title: README
+---
 # Static Websites And GitHub Pages
 
 This project is a demonstration of how to use the static website generator Jekyll with GitHub Pages
