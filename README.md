@@ -21,20 +21,20 @@ Requirements for the software and tools used in this guide.
 ### Step 1: Creating a GitHub Repository
 
 1. Start the creation of a repository by selecting the outlined button in the image below 
-![image](assets/_img/step1.png)
+![image](/img/step1.png)
 2. Enter the required information of your repository. (Ignore the warning I have for the Repository name)
     - Enter repository name as "username.github.io" where username is you github username
     - Set visibility to public
     - Select option to initialize repository with a README
     - Click **Create repository**
-![image](assets/_img/createmenu.png)
+![image](assets/img/createmenu.png)
 3. In the newly created repository navigate to **Settings**
 ![image](_img/settings.png)
 4. In the sidebar click **Pages**
 5. Set the deployment source to *Deploy from a branch* under the **Source** section
 6. Set the desired publishing branch under the **Branch** section
     - To keep it simple it is recommended that the main branch and root directory is the publishing branch
-![image](_img/pagesSetting.png)
+![image](assets/pagesSetting.png)
 7. Click Save
 ## Step 2: Setting up Jeykell for your repository
 
