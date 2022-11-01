@@ -119,13 +119,13 @@ Cannot load such file -- webrick (LoadError)
 3. Navigate to the server address displayed in the command prompt by copying the server address and pasting in the URL section of your browser
 4. Add the following to the **Gemfile** if you are using a remote theme ``` gem "github-pages", group: :jekyll_plugins```
 5. You end product should like something like does. Although it will differ depending on your chosen theme.
-![Alt Text](/_gifs/resume.gif)
+![Alt Text](/gifs/resume.gif)
 
 ## View Your Static Page
 1. Navigate to the settings tab of your repository
 2. Click on Pages on the sidebar
 3. Click vist site
-![Image](_img/visit.png)
+![Image](/img/visit.png)
 4. Add ```/RESUMENAME``` where RESUMENAME is the name of the resume you upload to the URL
 
 ## Relation Between Etter's Concepts and Steps to Hosting a Static Site
