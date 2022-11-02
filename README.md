@@ -120,7 +120,7 @@ plugins:
 
 ## Relation Between Etter's Concepts and Steps to Hosting a Static Site
 
-Etter's Book "Modern Technical Writing" describes many concepts and practices of modern technical writing that you have just done by following the steps above. Lets examine the core concepts and how the relate to the steps we just did.  
+By following the steps above, you have just completed many of Etter's concepts and practices of modern technical writing. Let's examine how the core concepts relate to the steps we just took.  
 
 1. Use a lightweight markup language
 
