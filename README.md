@@ -13,6 +13,7 @@ Requirements for the software and tools used in this guide.
 - [Git](https://git-scm.com/downloads)
 - [Ruby ( If you are on Windows the installer is recommended)](https://www.ruby-lang.org/en/downloads/)
 - [Jekyll](https://jekyllrb.com/docs/installation/)
+- A Markdown Resume. (See More Resource for Markdown Tutorial)
 ## Instructions
 ### Step 1: Creating a GitHub Repository
 
@@ -40,7 +41,7 @@ Requirements for the software and tools used in this guide.
 ![image](/img/clone.png)
 4. Open the command prompt by searching "Command Prompt" in your OS search function
 5. Create a new directory on your computer for your local repository
-6. Navigate to the new directory where you want to clone the repository to by running the following command replacing the placeholder path with your actual path
+6. Navigate to the new directory where you want to clone the repository to by running the following command
 ```
 cd path/to/your/directory
 ```
@@ -48,7 +49,7 @@ cd path/to/your/directory
 ```
 git clone {YOUR GITHUB REPO URL}
 ```
-8. Navigate into the newly clone repository by running, replacing the placehold path with the actual path to the local repository
+8. Navigate into the newly cloned repository by running
 ```
 cd path/to/your/repository 
 ```
@@ -59,14 +60,19 @@ cd path/to/your/repository
     ```
 10. Open the Gemfile created by Jekyll
 11. Comment out the line that starts with ```gem “jekyll” ```with #
-12. replace the comment the ```# gem "github-pages"``` with ```gem "github-pages", "~> 227", group: :jekyll_plugins```
+12. Replace the comment the ```# gem "github-pages"``` with ```gem "github-pages", "~> 227", group: :jekyll_plugins```
 13. Save the Gemfile
 14. Run ```bundle install``` from the command prompt
 15. Open the file _config.yml 
-16. Commit changes to the remote repository by running the follow command in the command prompt
-    - NOTE:  ```git add . ``` adds all the changes you have made to a staging area
-    - NOTE: ```git commit -m "Initial GitHub pages site with Jekyll"``` takes the changes that have are in the staging area and commits the changes. The -m is a flag and the text in double quotes that follow it is a message about the commited changes.
-17. Push your changes to the remote repository with the following command replacing BRANCH with your branch name
+16. Add changes by running the following in the commmand prompt
+```
+git add . 
+``` 
+17. Commit changes to the remote repository by running the follow command in the command prompt
+```
+git commit -m "Initial GitHub pages site with Jekyll"
+```
+18. Push your changes to the remote repository with the following command replacing BRANCH with your branch name
 ```
 git push -u origin BRANCH 
 ```
@@ -77,12 +83,12 @@ git push -u origin BRANCH
 1. Add your resume to the directory you had set for publishing in Step 1.6 in the local repository you cloned
 2. Run ```git add . ``` 
 2. Run ```git commit -m "adding resume"``` 
-3. Run ```git push -u origin BRANCH ``` again replacing BRANCH with your branch name
+3. Run ```git push -u origin BRANCH ```
 
 ### Step 4: Changing the Theme
 - If you don't want to change the theme leave everything as is. **This tutorial assume the theme is the default one, Minima**
 1. Open the *_config.yml* file in your local repository
-2. Add the following replace ```REMOTE/THEME/LOCATION``` to the location of one of the [supported themes](https://pages.github.com/themes/)
+2. Add the following, replace ```REMOTE/THEME/LOCATION``` to the location of one of the [supported themes](https://pages.github.com/themes/)
     - NOTE: For more information as to what to place in the ```remote_theme``` parameter see the README in the theme's repository 
     - NOTE: Use ```theme: THEME_NAME``` instead of ```remote_theme: REMOTE/THEME/LOCATION```if the theme is not remote.
 
@@ -94,7 +100,7 @@ plugins:
 ```
 3. Run ```git add . ``` 
 4. Run ```git commit -m "Changing theme"``` 
-6. Run ```git push -u origin BRANCH ``` again replacing BRANCH with your branch name
+6. Run ```git push -u origin BRANCH ```
 
 ### Step 5: Setting your resume as the default home page
 1. Open the directory for your local repository
@@ -111,17 +117,6 @@ plugins:
 ![Image](/img/visit.png)
 4. You should see something similar to the following
 ![Alt Text](/gifs/resume.gif)
-
-## Running Jekyll Locally
-Now that the set up done lets take a look at how to run Jekyll Locally
-1. Run ```gem install bundler``` to install bundler
-2. Run ```bundle exec jekyll serve``` while in your root directory to start your website
-    - If you see the follow error in this step run ```bundle add webrick``` then re-run ```bundle exec jekyll serve```
-```
-Cannot load such file -- webrick (LoadError)
-```
-3. Navigate to the server address displayed in the command prompt by copying the server address and pasting in the URL section of your browser
-4. Add the following to the **Gemfile** if you are using a remote theme ``` gem "github-pages", group: :jekyll_plugins```
 
 ## Relation Between Etter's Concepts and Steps to Hosting a Static Site
 
